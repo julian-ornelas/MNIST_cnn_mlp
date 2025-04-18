@@ -8,6 +8,7 @@ def sigmoid(x):  # manually define the sigmoid
 
 def softmax(x):  # define the softmax 
     
+    
 
 def dataloader(train_dataset, test_dataset, batch_size=128):
     train_loader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
@@ -24,11 +25,12 @@ def load_data():
 
 class MLP:
     def __init__(self, input_size, hidden_size, output_size,lr):  # 
-        
+        self.input_size =  input_size
+        self.hidden_size = hidden_size
+        self.output_size = output_size
+        self.lr = lr
     
-    def forward(self, x):  # forward propagation to get predictions
-        
-        
+    def forward(self, x):  # forward propagation to get predictions 
         return outputs
     
     def backward(self, x, y, pred):
