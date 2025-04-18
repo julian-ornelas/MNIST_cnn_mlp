@@ -4,7 +4,7 @@ import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 
 def sigmoid(x):  # manually define the sigmoid
-    
+    return ( 1 / (1 + np.exp(-x)) )
 
 def softmax(x):  # define the softmax 
     
